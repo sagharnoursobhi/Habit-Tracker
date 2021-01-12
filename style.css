@@ -1,0 +1,48 @@
+#title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+body {
+    background-image: url(habitTra.jpg);
+}
+.removeBtn{
+    pointer-events: none;
+  }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #00000054;
+    border-radius: 20px;
+    border-color: white;
+    border-style: dashed;
+}
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+}
+tr {
+    text-align: center;
+}
+.habit-day{
+    height: 40px;
+    width: 40px;
+    background-color: #00000038;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer {
+    text-align: center;
+    margin-top: 50px;
+}
+.form-group {
+    margin-top: 10px;
+}
+.tHead {
+    font-size: 25px;
+    font-style: italic;
+}
