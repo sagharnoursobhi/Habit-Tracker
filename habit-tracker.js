@@ -7,11 +7,7 @@ const habitList = document.querySelector('#habit-list')
 const errorEmpty = document.querySelector('.error')
 const newWeek = document.querySelector('.btn')
 
-//class eventName {
-//    constructor(event) {
-//        this.createDiv(event)
-//    }
-//}
+
 
 //event listeners
 addBtn.addEventListener('click', addHabit)//invocking addHabbit function with clicking on it
@@ -35,13 +31,7 @@ document.addEventListener('click', function (event) {
 
 
 
-/*
-habitInput.addEventListener("keyup", addHabit) 
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   alert('ehue')
-  }
-*/
+
 
 function addHabit(){
     //prevent form from submitting
@@ -86,21 +76,7 @@ function habitRemover(element)
   element.parentElement.parentElement.remove();//receiving the element and removing the habit that have been added
 }
 
-//remove btn
-// function deleteAction(e) {
-//   const item = e.target
-//   if (item.classList[0]=== 'trash-btn'){
-//       const habit = item.parentElement
-//       habit.remove()
-//   }
-// }
 
-
-//function
-
-//list
-
-//element.insertAdjacentHTML(beforeend,text)
 
 
 
@@ -119,34 +95,3 @@ function addWeek(x) {
   section.appendChild(btn);
 }
 
-/*
-var a = document.getElementById('btn');
-a.addEventListener('click', function() {
-  var section = document.createElement('section');
-  section.setAttribute('id', 1);
-  document.getElementById('wrapper').appendChild(section); 
-  var h3 = document.createElement('h3');
-  h3.innerText = document.getElementById('sectionText').value;
-  section.appendChild(h3);
-  var input = document.createElement('INPUT');
-  input.setAttribute('type', 'text')
-  section.appendChild(input);
-  var btn = document.createElement('button');
-  btn.innerText = 'New List Item'
-  section.appendChild(btn);
-
-  btn.addEventListener('click', function() {
-    var div = document.createElement('div');
-    div.setAttribute('class', 'listItem');
-    var checkbox = document.createElement('INPUT');
-    checkbox.setAttribute('type', 'checkbox');
-    checkbox.setAttribute('id', 'checker');
-    div.appendChild(checkbox);
-    var span = document.createElement('span')
-    span.innerText = this.previousElementSibling.value;
-    div.appendChild(span);
-    input.parentNode.insertBefore(div, input);
-  }, false);
-})
-
-*/
