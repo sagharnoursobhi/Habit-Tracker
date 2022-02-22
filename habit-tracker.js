@@ -4,7 +4,7 @@ const addBtn = document.querySelector('.addBtn')//finding all elements with addB
 const habitInput = document.querySelector('#habit-name')
 const habitColorInput = document.querySelector('#habit-color')
 const habitList = document.querySelector('#habit-list')
-const errorEmpty = document.querySelector('.error')
+// const errorEmpty = document.querySelector('.error')
 const newWeek = document.querySelector('.btn')
 
 

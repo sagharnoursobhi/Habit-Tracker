@@ -1,23 +1,26 @@
+* {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
 #title {
     text-align: center;
     font-size: 45px;
     font-weight: 700;
 }
-body {
-    background-image: url(habitTra.jpg);
-}
+
 .removeBtn{
     pointer-events: none;
   }
 
 .container {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20 auto;
     padding: 100px;
     background-color: #00000054;
     border-radius: 20px;
     border-color: white;
-    border-style: dashed;
 }
 table{
     width: 100%;
@@ -45,4 +48,15 @@ tr {
 .tHead {
     font-size: 25px;
     font-style: italic;
+}
+@media only screen and (max-width:500px) {
+    .container {
+        padding: 50px
+    }
+    #title{
+        font-size:30px;
+    }
+    .tHead {
+        font-size: 19px;
+    }
 }
